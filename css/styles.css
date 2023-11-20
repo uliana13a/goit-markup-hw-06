@@ -187,7 +187,9 @@ img {
 }
 
 .item-paddind-text {
-    margin-top: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    gap: 8px;
 }
 
 .team-name {
@@ -233,7 +235,6 @@ img {
     background-color: var(--second-color);
     width: 264px;
     margin: auto;
-    padding-bottom: 32px;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
@@ -441,7 +442,6 @@ img {
 }
 
 .footer-button-icon {
-    margin-left: 16px;
     fill: var(--second-color);
 }
 
@@ -699,20 +699,21 @@ img {
     color: var(--hover-focus-color);
 }
 
-.addres-block {
+.adress-block {
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    margin-bottom: 48px;
+    gap: 12px;
+    margin-bottom: 16px;
 }
 
-.addres-block-item {
+.address-block-item {
+    font-family: var(--main-font);
     color: var(--primary-link-color);
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2em;
-    letter-spacing: 0.02em;
-    font-style: normal;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0.48px;
 }
 
 .blue {
@@ -741,7 +742,7 @@ img {
     }
 
     .header-addres {
-        display: none;
+        font-style: normal;
     }
 
     .header-wraper {
@@ -1026,6 +1027,7 @@ img {
     .about-as-block {
         width: calc((100% - 72px) / 4);
     }
+    
 
     .about-as-icon {
         display: flex;
