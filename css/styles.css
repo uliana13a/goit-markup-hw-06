@@ -307,7 +307,7 @@ width: 100%;
     text-align: left;
 }
 
-.conteiner-for-overlay {
+.ffor-overlay {
     position: relative;
     overflow: hidden;
 }
@@ -336,6 +336,8 @@ width: 100%;
 }
 
 .footer-logo-cont {
+    max-width: 264px;
+    margin-right: 120px;
     display: block;
     flex-direction: column;
     align-items: center;
@@ -357,7 +359,6 @@ width: 100%;
 }
 
 .footer-text {
-    max-width: 264px;
     color: var(--other);
     letter-spacing: 0.02em;
     font-size: 16px;
@@ -900,34 +901,55 @@ display: inline-flex;
         height: 436px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/Dark-bg-tab.jpg");
     }
+    .hero {
+        padding-top: 112px;
+        padding-bottom: 112px;
+        
+    } 
 
     .hero-text {
         font-size: 56px;
-        margin: auto;
         margin-bottom: 36px;
         max-width: 496px;
     }
+
 
     .about-as-icon svg {
         display: none;
     }
 
     .about-as-list {
-        gap: 24px;
+        padding-bottom: 72px;
+        padding-right: 24px;
         flex-direction: row;
         flex-wrap: wrap;
+        gap: 24px;
     }
 
     .about-as-block {
-        width: calc((100% - 24px) / 2);
+        width: calc((100% - 24px) / 2);    
+        margin-bottom: 72px;
     }
 
     .list-item {
         text-align: left;
+        font-family: var(--main-font);
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 1.1;
+letter-spacing: 0.72px;
+text-transform: capitalize;
     }
 
     .list-text {
         margin: 0;
+        font-family: var(--main-font);
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: 0.32px;
     }
 
     .list-position {
@@ -941,6 +963,24 @@ display: inline-flex;
 
     .item-paddind {
         margin: 0;
+    }
+
+    .team-name {
+        font-family: var(--main-font);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.4px;
+    }
+
+    .team-position {
+    font-family: var(--main-font);
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.5;
+letter-spacing: 0.32px;
     }
 
     .portfolio-img {
@@ -1034,18 +1074,20 @@ display: inline-flex;
     }
 
     .addres-block {
-        height: 100%;
+        display: flex;
+        flex-direction: row;
+        height: 72px;
         align-items: center;
         gap: 40px;
-        margin: 0;
-        flex-direction: row;
     }
 
     .addres-block-item {
+        font-family: var(--main-font);
         font-size: 16px;
+        font-style: normal;
         font-weight: 400;
         line-height: 1.5;
-        letter-spacing: 0.02em;
+        letter-spacing: 0.32px;
     }
 
     .hero {
@@ -1143,7 +1185,8 @@ display: inline-flex;
     }
 
     .portfolio {
-        padding: 120px 0 120px 0;
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
 
     .portfolio-position {
@@ -1289,7 +1332,6 @@ display: inline-flex;
     }
 
     .footer-button-icon {
-        margin-left: 16px;
         fill: var(--second-color);
     }
 
